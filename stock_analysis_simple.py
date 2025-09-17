@@ -33,33 +33,35 @@ st.markdown("""
 <style>
     .main-header {
         font-size: 3rem;
-        color: #1f77b4;
+        color: var(--text-color);
         text-align: center;
         margin-bottom: 2rem;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
     }
     .section-header {
         font-size: 1.8rem;
-        color: #ff7f0e;
+        color: var(--primary-color);
         margin-top: 2rem;
         margin-bottom: 1rem;
-        border-bottom: 2px solid #ff7f0e;
+        border-bottom: 2px solid var(--primary-color);
         padding-bottom: 0.5rem;
     }
     .metric-card {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: var(--secondary-background-color);
         padding: 1rem;
         border-radius: 10px;
-        color: white;
+        color: var(--text-color);
         text-align: center;
         margin: 0.5rem 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
     .info-card {
-        background: #f8f9fa;
+        background: var(--background-color);
         padding: 1rem;
         border-radius: 8px;
-        border-left: 4px solid #28a745;
+        border-left: 4px solid var(--primary-color);
         margin: 1rem 0;
+        color: var(--text-color);
     }
 </style>
 """, unsafe_allow_html=True)
